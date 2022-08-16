@@ -44,7 +44,7 @@ describe('jest-junit tests', () => {
     fs.writeFileSync(outputPath, report)
   })
 
-  it('report from facebook/jest test results matches snapshot 2', async () => {
+  it('report from facebook/jest test results matches snapshot', async () => {
     const fixturePath = path.join(__dirname, 'fixtures', 'external', 'jest', 'jest-test-results.xml')
     const trackedFilesPath = path.join(__dirname, 'fixtures', 'external', 'jest', 'files.txt')
     const outputPath = path.join(__dirname, '__outputs__', 'jest-test-results.md')
