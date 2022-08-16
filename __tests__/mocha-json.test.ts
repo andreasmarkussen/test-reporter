@@ -43,7 +43,7 @@ describe('mocha-json tests', () => {
     fs.writeFileSync(outputPath, report)
   })
 
-  it('report from mochajs/mocha test results matches snapshot', async () => {
+  it('report from mochajs/mocha test results matches snapshot3', async () => {
     const fixturePath = path.join(__dirname, 'fixtures', 'external', 'mocha', 'mocha-test-results.json')
     const trackedFilesPath = path.join(__dirname, 'fixtures', 'external', 'mocha', 'files.txt')
     const outputPath = path.join(__dirname, '__outputs__', 'mocha-test-results.md')
